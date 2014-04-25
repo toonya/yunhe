@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>服务套餐管理-业务支撑管理后台 | 云和恩墨</title>
+<link rel="stylesheet" type="text/css" href="css/admin.css">
+</head>
+
+<body>
+	<div id="header">	
+		<div class="info-field">
+			<div class="logo-field fl">
+				<a href="http://www.enmotech.com/"><img class="logo" src="images/logo.gif"></a><h3 class="fl font-yahei color-white">云和恩墨后台管理</h3>
+			</div>
+			<div class="nav-field fl">
+				<div class="nav-field-up">
+					<p class="fl m10 font-12" style="width:400px;"><span>欢迎您：老琦</span> | <span>[<a href="">超级管理员</a>]</span> | <span>[<a href="">退出登录</a>]</span> | <span><a href="http://www.enmotech.com/">主页</a></span></p>
+			    </div>
+				<div class="nav-field-down">
+					<p class="fl m10 font-14" style="width:400px;"><span><a class="selected" href="">业务管理</a></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span><a href="">内容管理</a></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span><a href="http://www.enmotech.com/">系统设置</a></span></p>
+				</div>
+			</div>		
+		</div>		
+	</div>
+
+	<div id="main">
+		<div id="v-nav" class="fl">
+			<ul>
+				<li><a href="business-management-1.html">服务套餐管理</a></li>
+				<li><a href="business-management-2.html">客户资料管理</a></li>
+                <li><a href="business-management-3.html">服务订单管理</a></li>
+				<li><a href="business-management-4.html">Case跟踪管理</a></li>
+			</ul>
+		</div>
+		<div id="content" class="fl">
+			<p class="c-nav"><a href="">后台</a> > <a href="">业务管理</a> > <a href="business-management-1.html">服务套餐管理</a></p>
+			<button class="btn_new" onclick="window.location.href='business-management-1.1.html'">+ 添加新套餐</button>
+			<table width="95%" cellpadding="0" cellspacing="0">
+				<tr class="table-h">
+					<td width="40%">套餐名称/描述文本</td>
+					<td width="20%">报价</td>
+					<td width="10%">排序</td>
+					<td width="15%">状态</td>
+					<td width="15%">操作</td>
+				</tr>
+				<tr class="table-c">
+					<td width="40%">
+						<p class="color-black font-yahei font-bold">A套餐</p>
+						<p>核心描述：普通故障支援，随叫随到</p>
+						<p>附加描述1：不限次数的远程支援服务</p>
+						<p>附加描述2：无限制 电话咨询/邮件咨询 故障服务</p>
+					</td>
+					<td width="20%">
+						<p class="color-black font-yahei font-bold">方式1：单套数据库</p>
+						<p>报价：18000 元</p>
+						<p class="color-black font-yahei font-bold">方式2：多节点RAC数据库</p>
+						<p>报价：双节点 22000 元</p>
+						<p>增加节点 2000 元/节</p>
+					</td>
+					<td width="10%" class="text-center">0</td>
+					<td width="15%" class="text-center">可用</td>
+					<td width="15%" class="operations text-center">
+						<p><a href="">编辑</a></p>
+						<p><a href="">设为不可用</a></p>
+						<p><a href="">删除</a></p>
+					</td>
+				</tr>
+				<tr class="table-c">
+					<td width="40%">
+						<p class="color-black font-yahei font-bold">A套餐</p>
+						<p>核心描述：深度故障处理，专业高效</p>
+						<p>附加描述1：不限故障等级的远程支援服务</p>
+						<p>附加描述2：无限制 电话咨询/邮件咨询 故障服务</p>
+					</td>
+					<td width="20%">
+						<p class="color-black font-yahei font-bold">方式1：单套数据库（无关RAC）</p>
+						<p>报价：12000 元</p>
+					</td>
+					<td width="10%" class="text-center">0</td>
+					<td width="15%" class="text-center">可用</td>
+					<td width="15%" class="operations text-center">
+						<p><a href="">编辑</a></p>
+						<p><a href="">设为不可用</a></p>
+						<p><a href="">删除</a></p>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	<div class="clearfix"></div>
+</body>

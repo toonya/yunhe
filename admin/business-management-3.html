@@ -1,0 +1,285 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>服务订单管理-业务支撑管理后台 | 云和恩墨</title>
+<link rel="stylesheet" type="text/css" href="css/admin.css">
+</head>
+
+<body>
+	<div id="header">	
+		<div class="info-field">
+			<div class="logo-field fl">
+				<a href="http://www.enmotech.com/"><img class="logo" src="images/logo.gif"></a><h3 class="fl font-yahei color-white">云和恩墨后台管理</h3>
+			</div>
+			<div class="nav-field fl">
+				<div class="nav-field-up">
+					<p class="fl m10 font-12" style="width:400px;"><span>欢迎您：老琦</span> | <span>[<a href="">超级管理员</a>]</span> | <span>[<a href="">退出登录</a>]</span> | <span><a href="http://www.enmotech.com/">主页</a></span></p>
+			    </div>
+				<div class="nav-field-down">
+					<p class="fl m10 font-14" style="width:400px;"><span><a class="selected" href="">业务管理</a></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span><a href="">内容管理</a></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span><a href="http://www.enmotech.com/">系统设置</a></span></p>
+				</div>
+			</div>		
+		</div>		
+	</div>
+
+	<div id="main">
+		<div id="v-nav" class="fl">
+			<ul>
+				<li><a href="business-management-1.html">服务套餐管理</a></li>
+				<li><a href="business-management-2.html">客户资料管理</a></li>
+                <li><a href="business-management-3.html">服务订单管理</a></li>
+				<li><a href="business-management-4.html">Case跟踪管理</a></li>
+			</ul>
+		</div>
+		<div id="content" class="fl">
+			<p class="c-nav"><a href="">后台</a> > <a href="">业务管理</a> > <a href="">服务订单管理</a></p>
+
+			<div style="width:95%;margin:0 auto;">
+				<span>查找订单：</span><select id="u200_input" class="normal-select">
+								          <option selected="" value="按订单号">按订单号</option>
+								          <option value="按主机名">按主机名</option>
+								          <option value="按DB_NAME">按DB_NAME</option>
+								          <option value="按用户名">按用户名</option>
+								          <option value="按手机号">按手机号</option>
+								          <option value="按邮箱">按邮箱</option>
+								        </select>
+								        <input id="u48_input" type="text" value="" class="normal-input"/>
+		        <span>&nbsp;&nbsp;&nbsp;订单状态：</span><select id="u212_input" class="normal-select">
+								          <option selected="" value="全部">全部</option>
+								          <option value="待确认">待确认</option>
+								          <option value="待付款">待付款</option>
+								          <option value="购买成功">购买成功</option>
+								          <option value="已结束">已结束</option>
+								          <option value="已取消">已取消</option>
+								        </select>
+				<span>&nbsp;&nbsp;&nbsp;起止时间：</span><input style="width:130px" id="u48_input" type="text" value="" class="normal-input"/> 至 <input style="width:130px;" id="u49_input" type="text" value="" class="normal-input"/>
+				<button class="btn_search" style="margin:0 5px;">查找</button>
+				<button class="btn_search" style="margin-right:0;">移交全部跟单</button>
+			</div>
+			<table width="95%" cellpadding="0" cellspacing="0">
+				<tr class="table-h">
+					<td width="15%">订单号/细节</td>
+					<td width="15%">客户信息</td>
+					<td width="12%">数据库/主机信息</td>
+					<td width="12%">套餐信息</td>
+					<td width="14%">可选服务项目</td>
+					<td width="10%">下单时间</td>
+					<td width="10%">联系情况</td>
+					<td width="12%">操作</td>
+				</tr>
+				<tr class="table-c3">
+					<td>
+						<p class="color-dgrey font-yahei font-bold mb10">212316546467646546</p>
+						<p class="color-orange font-bold">总金额：&yen;58,000元</p>
+						<p>订单状态：待确认</p>
+					</td>
+					<td>
+						<p>老琦 先生</p>
+						<p>sonic5555cn@gmail.com</p>
+						<p>18601234567</p>
+					</td>
+					<td class="font-bold color-dgrey">暂无</td>
+					<td>
+						<p>A套餐</p>
+						<p>RAC多节点数据库</p>
+                        <p>节点数量：<span class="color-orange font-bold"> 3</span></p>
+                        <p>服务年限：<span class="color-orange font-bold"> 2 </span>年</p>
+                    </td>
+					<td>
+						<p>远程巡检及巡检报告</p>
+						<p>数据库备份方案及实施</p>
+					</td>
+					<td>
+						<p class="font-bold color-dgrey">2014-04-05 12:25:41</p>
+					</td>
+					<td>
+						<p>未联系</p>
+						<p>联系人：无</p>
+					</td>
+					<td class="operations text-center">
+						<p><a href="">标志为我的订单</a></p>
+						<p><a href="">分配该订单</a></p>
+					</td>
+				</tr>
+				<tr class="table-c3">
+					<td>
+						<p class="color-dgrey font-yahei font-bold mb10">212316546467646546</p>
+						<p class="color-orange font-bold">总金额：&yen;58,000元</p>
+						<p>订单状态：待确认</p>
+					</td>
+					<td>
+						<p>老琦 先生</p>
+						<p>sonic5555cn@gmail.com</p>
+						<p>18601234567</p>
+					</td>
+					<td class="font-bold color-dgrey">暂无</td>
+					<td>
+						<p>A套餐</p>
+						<p>RAC多节点数据库</p>
+                        <p>节点数量：<span class="color-orange font-bold"> 3</span></p>
+                        <p>服务年限：<span class="color-orange font-bold"> 2 </span>年</p>
+                    </td>
+					<td>
+						<p>远程巡检及巡检报告</p>
+						<p>数据库备份方案及实施</p>
+					</td>
+					<td>
+						<p class="font-bold color-dgrey">2014-04-05 12:25:41</p>
+					</td>
+					<td>
+						<p>已联系</p>
+						<p>联系人：罗海雄</p>
+					</td>
+					<td class="operations text-center">
+						<p><a href="">确认签单</a></p>
+						<p><a href="">取消订单</a></p>
+						<p><a href="">移交他人跟单</a></p>
+						<p><a href="">跟单日志</a></p>
+					</td>
+				</tr>
+				<tr class="table-c3">
+					<td>
+						<p class="color-dgrey font-yahei font-bold mb10">212316546467646546</p>
+						<p class="color-orange font-bold">总金额：&yen;58,000元</p>
+						<p>订单状态：待付款</p>
+					</td>
+					<td>
+						<p>老琦 先生</p>
+						<p>sonic5555cn@gmail.com</p>
+						<p>18601234567</p>
+					</td>
+					<td class="font-bold color-dgrey">暂无</td>
+					<td>
+						<p>A套餐</p>
+						<p>RAC多节点数据库</p>
+                        <p>节点数量：<span class="color-orange font-bold"> 3</span></p>
+                        <p>服务年限：<span class="color-orange font-bold"> 2 </span>年</p>
+                    </td>
+					<td>
+						<p>远程巡检及巡检报告</p>
+						<p>数据库备份方案及实施</p>
+					</td>
+					<td>
+						<p class="font-bold color-dgrey">2014-04-05 12:25:41</p>
+					</td>
+					<td>
+						<p>已联系</p>
+						<p>联系人：罗海雄</p>
+					</td>
+					<td class="operations text-center">
+						<p><a href="">确认签单</a></p>
+						<p><a href="">取消订单</a></p>
+						<p><a href="">移交他人跟单</a></p>
+						<p><a href="">跟单日志</a></p>
+					</td>
+				</tr>
+				<tr class="table-c3">
+					<td>
+						<p class="color-dgrey font-yahei font-bold mb10">212316546467646546</p>
+						<p class="color-orange font-bold">总金额：&yen;58,000元</p>
+						<p>订单状态：购买成功</p>
+					</td>
+					<td>
+						<p>老琦 先生</p>
+						<p>sonic5555cn@gmail.com</p>
+						<p>18601234567</p>
+					</td>
+					<td class="font-bold color-dgrey">暂无</td>
+					<td>
+						<p>A套餐</p>
+						<p>RAC多节点数据库</p>
+                        <p>节点数量：<span class="color-orange font-bold"> 3</span></p>
+                        <p>服务年限：<span class="color-orange font-bold"> 2 </span>年</p>
+                    </td>
+					<td>
+						<p>远程巡检及巡检报告</p>
+						<p>数据库备份方案及实施</p>
+					</td>
+					<td>
+						<p class="font-bold color-dgrey">2014-04-05 12:25:41</p>
+					</td>
+					<td>
+						<p>已联系</p>
+						<p>联系人：罗海雄</p>
+					</td>
+					<td class="operations text-center">
+						<p><a href="">查看相关Case</a></p>
+						<p><a href="">移交他人跟单</a></p>
+						<p><a href="">跟单日志</a></p>
+					</td>
+				</tr>
+				<tr class="table-c3">
+					<td>
+						<p class="color-dgrey font-yahei font-bold mb10">212316546467646546</p>
+						<p class="color-orange font-bold">总金额：&yen;58,000元</p>
+						<p>订单状态：已到期</p>
+					</td>
+					<td>
+						<p>老琦 先生</p>
+						<p>sonic5555cn@gmail.com</p>
+						<p>18601234567</p>
+					</td>
+					<td class="font-bold color-dgrey">暂无</td>
+					<td>
+						<p>A套餐</p>
+						<p>RAC多节点数据库</p>
+                        <p>节点数量：<span class="color-orange font-bold"> 3</span></p>
+                        <p>服务年限：<span class="color-orange font-bold"> 2 </span>年</p>
+                    </td>
+					<td>
+						<p>远程巡检及巡检报告</p>
+						<p>数据库备份方案及实施</p>
+					</td>
+					<td>
+						<p class="font-bold color-dgrey">2014-04-05 12:25:41</p>
+					</td>
+					<td>
+						<p>已联系</p>
+						<p>联系人：罗海雄</p>
+					</td>
+					<td class="operations text-center">
+						<p><a href="">邮件提醒续费</a></p>
+						<p><a href="">短信提醒续费</a></p>
+						<p><a href="">移交他人跟单</a></p>
+						<p><a href="">跟单日志</a></p>
+					</td>
+				</tr>
+				<tr class="table-c3">
+					<td>
+						<p class="color-dgrey font-yahei font-bold mb10">212316546467646546</p>
+						<p class="color-orange font-bold">总金额：&yen;58,000元</p>
+						<p>订单状态：已取消</p>
+					</td>
+					<td>
+						<p>老琦 先生</p>
+						<p>sonic5555cn@gmail.com</p>
+						<p>18601234567</p>
+					</td>
+					<td class="font-bold color-dgrey">暂无</td>
+					<td>
+						<p>A套餐</p>
+						<p>RAC多节点数据库</p>
+                        <p>节点数量：<span class="color-orange font-bold"> 3</span></p>
+                        <p>服务年限：<span class="color-orange font-bold"> 2 </span>年</p>
+                    </td>
+					<td>
+						<p>远程巡检及巡检报告</p>
+						<p>数据库备份方案及实施</p>
+					</td>
+					<td>
+						<p class="font-bold color-dgrey">2014-04-05 12:25:41</p>
+					</td>
+					<td>
+						<p>已联系</p>
+						<p>联系人：罗海雄</p>
+					</td>
+					<td class="operations text-center">
+						<p><a href="">跟单日志</a></p>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	<div class="clearfix"></div>
+</body>

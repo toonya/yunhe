@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>添加/编辑客户资料-业务支撑管理后台 | 云和恩墨</title>
+<link rel="stylesheet" type="text/css" href="css/admin.css">
+</head>
+
+<body>
+	<div id="header">	
+		<div class="info-field">
+			<div class="logo-field fl">
+				<a href="http://www.enmotech.com/"><img class="logo" src="images/logo.gif"></a><h3 class="fl font-yahei color-white">云和恩墨后台管理</h3>
+			</div>
+			<div class="nav-field fl">
+				<div class="nav-field-up">
+					<p class="fl m10 font-12" style="width:400px;"><span>欢迎您：老琦</span> | <span>[<a href="">超级管理员</a>]</span> | <span>[<a href="">退出登录</a>]</span> | <span><a href="http://www.enmotech.com/">主页</a></span></p>
+			    </div>
+				<div class="nav-field-down">
+					<p class="fl m10 font-14" style="width:400px;"><span><a class="selected" href="">业务管理</a></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span><a href="">内容管理</a></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span><a href="http://www.enmotech.com/">系统设置</a></span></p>
+				</div>
+			</div>		
+		</div>		
+	</div>
+
+	<div id="main">
+		<div id="v-nav" class="fl">
+			<ul>
+				<li><a href="business-management-1.html">服务套餐管理</a></li>
+				<li><a href="business-management-2.html">客户资料管理</a></li>
+                <li><a href="business-management-3.html">服务订单管理</a></li>
+				<li><a href="business-management-4.html">Case跟踪管理</a></li>
+			</ul>
+		</div>
+		<div id="content" class="fl">
+			<p class="c-nav"><a href="">后台</a> > <a href="">业务管理</a> > <a href="business-management-2.html">客户资料管理</a> > <a href="">添加/编辑客户资料</a></p>
+			<p class="color-red ml60">带 * 的项目为必填项目</p>
+			<p class="normal-h fl ml60">ID：</p><input disabled="disabled" class="normal-input width400" type="text" value="13474349" />
+			<br>
+			<p class="normal-h fl ml60"><span class="color-red">*</span>用户名：</p><input class="normal-input width400" type="text" />
+			<br>
+			<p class="normal-h fl ml60"><span class="color-red">*</span>密码：</p><input class="normal-input width400" type="text" />
+			<br>
+			<p class="normal-h fl ml60"><span class="color-red">*</span>邮箱：</p><input class="normal-input width400" type="text" />
+			<br>
+			<p class="normal-h fl ml60"><span class="color-red">*</span>手机号：</p><input class="normal-input width400" type="text" />
+
+
+			<p class="dotted-h"><span class="dotted-h-name font-bold font-yahei font-14 color-dgrey">公司资料</span></p>
+			<p class="normal-h fl ml60">所属行业：</p><select class="normal-select" id="u51_input">
+												          <option selected="" value="请选择">请选择</option>
+												          <option value="互联网/电子商务">互联网/电子商务</option>
+												          <option value="金融/银行">金融/银行</option>
+												          <option value="机械制造">机械制造</option>
+												          <option value="（更多行业选择）">（更多行业选择）</option>
+												        </select>
+			<br>
+			<p class="normal-h fl ml60">公司地址：</p><input class="normal-input width400" type="text" />
+			<br>
+			<p class="normal-h fl ml60">联系人姓名：</p><input class="normal-input width400" type="text" />
+
+			<p class="dotted-h"><span class="dotted-h-name font-bold font-yahei font-14 color-dgrey">其它信息</span></p>
+			<p class="normal-h fl ml60">当前状态：</p><select id="u49_input" class="normal-select width100">
+												          <option selected="" value="正常">正常</option>
+												          <option value="锁定">锁定</option>
+												        </select>
+	        <br>
+            <button style="margin-left:310px;" class="btn_save font-14 font-bold">保存</button><button class="btn_clear font-14 font-bold">清空</button>
+		</div>
+	</div>
+	<div class="clearfix"></div>
+</body>

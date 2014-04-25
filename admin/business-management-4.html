@@ -1,0 +1,193 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Case跟踪管理-业务支撑管理后台 | 云和恩墨</title>
+<link rel="stylesheet" type="text/css" href="css/admin.css">
+</head>
+
+<body>
+	<div id="header">	
+		<div class="info-field">
+			<div class="logo-field fl">
+				<a href="http://www.enmotech.com/"><img class="logo" src="images/logo.gif"></a><h3 class="fl font-yahei color-white">云和恩墨后台管理</h3>
+			</div>
+			<div class="nav-field fl">
+				<div class="nav-field-up">
+					<p class="fl m10 font-12" style="width:400px;"><span>欢迎您：老琦</span> | <span>[<a href="">超级管理员</a>]</span> | <span>[<a href="">退出登录</a>]</span> | <span><a href="http://www.enmotech.com/">主页</a></span></p>
+			    </div>
+				<div class="nav-field-down">
+					<p class="fl m10 font-14" style="width:400px;"><span><a class="selected" href="">业务管理</a></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span><a href="">内容管理</a></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span><a href="http://www.enmotech.com/">系统设置</a></span></p>
+				</div>
+			</div>		
+		</div>		
+	</div>
+
+	<div id="main">
+		<div id="v-nav" class="fl">
+			<ul>
+				<li><a href="business-management-1.html">服务套餐管理</a></li>
+				<li><a href="business-management-2.html">客户资料管理</a></li>
+                <li><a href="business-management-3.html">服务订单管理</a></li>
+				<li><a href="business-management-4.html">Case跟踪管理</a></li>
+			</ul>
+		</div>
+		<div id="content" class="fl">
+			<p class="c-nav"><a href="">后台</a> > <a href="">业务管理</a> > <a href="">Case跟踪管理</a></p>
+			<button class="btn_new">+ 提交新Case</button>
+			<div style="width:95%;margin:0 auto;">
+				<span>查找Case单：</span><select id="u69_input" class="normal-select">
+									          <option selected="" value="按Case单号">按Case单号</option>
+									          <option value="按订单号">按订单号</option>
+									          <option value="按主机名">按主机名</option>
+									          <option value="按DB_NAME">按DB_NAME</option>
+									          <option value="按用户名">按用户名</option>
+									        </select>
+								        <input id="u48_input" type="text" value="" class="normal-input"/>
+		        <span>&nbsp;&nbsp;&nbsp;Case单状态：</span><select id="u79_input" class="normal-select">
+													          <option selected="" value="全部">全部</option>
+													          <option value="待处理">待处理</option>
+													          <option value="处理中">处理中</option>
+													          <option value="已完结">已完结</option>
+													        </select>
+																	<span>&nbsp;&nbsp;&nbsp;起止时间：</span><input style="width:130px" id="u48_input" type="text" value="" class="normal-input"/> 至 <input style="width:130px;" id="u49_input" type="text" value="" class="normal-input"/>
+				<button class="btn_search" style="margin:0 5px;">查找</button>
+				<button class="btn_search" style="margin:0;">移交全部Case单</button>
+			</div>
+			<table width="95%" cellpadding="0" cellspacing="0">
+				<tr class="table-h">
+					<td width="15%">Case单号</td>
+					<td width="15%">所属订单（号）</td>
+					<td width="14%">数据库/主机信息</td>
+					<td width="8%">提交人</td>
+					<td width="10%">提交时间</td>
+					<td width="8%">当前状态</td>
+					<td width="8%">处理人</td>
+					<td width="10%">最后更新时间</td>
+					<td width="12%">操作</td>
+				</tr>
+				<tr class="table-c4">
+					<td>
+						<p class="color-dgrey font-yahei font-bold">CS1000052634565456</p>
+					</td>
+					<td>
+						<p class="color-dgrey font-yahei font-bold">212316546467646546</p>
+						<p><a class="color-lblue" href="">客户信息</a></p>
+						<p><a class="color-lblue" href="">套餐信息</a></p>
+					</td>
+					<td>
+						<p class="font-bold color-dgrey font-yahei">DB_NAME：orcl_001</p>
+						<p>主机名：Linux_MQ</p>
+						<p>IP地址：58.232.1.241</p>
+					</td>
+					<td>老琦</td>
+					<td>
+						<p class="font-bold color-dgrey font-yahei">2014-04-05 12:25:41</p>
+					</td>
+					<td>
+						<p>待处理</p>
+					</td>
+					<td>
+						<p>无</p>
+					</td>
+					<td><p class="font-bold color-dgrey font-yahei">—</p></td>
+					<td class="operations text-center">
+						<p><a href="">我来处理</a></p>
+					</td>
+				</tr>
+				<tr class="table-c4">
+					<td>
+						<p class="color-dgrey font-yahei font-bold">CS1000052634565456</p>
+					</td>
+					<td>
+						<p class="color-dgrey font-yahei font-bold">212316546467646546</p>
+						<p><a class="color-lblue" href="">客户信息</a></p>
+						<p><a class="color-lblue" href="">套餐信息</a></p>
+					</td>
+					<td>
+						<p class="font-bold color-dgrey font-yahei">DB_NAME：orcl_001</p>
+						<p>主机名：Linux_MQ</p>
+						<p>IP地址：58.232.1.241</p>
+					</td>
+					<td>老琦</td>
+					<td>
+						<p class="font-bold color-dgrey font-yahei">2014-04-05 12:25:41</p>
+					</td>
+					<td>
+						<p>处理中</p>
+					</td>
+					<td>
+						<p>杨廷坤</p>
+					</td>
+					<td><p class="font-bold color-dgrey font-yahei">—</p></td>
+					<td class="operations text-center">
+						<p><a href="">更新处理日志</a></p>
+						<p><a href="">移交他人处理</a></p>
+						<p><a href="">查看日志</a></p>
+					</td>
+				</tr>
+				<tr class="table-c4">
+					<td>
+						<p class="color-dgrey font-yahei font-bold">CS1000052634565456</p>
+					</td>
+					<td>
+						<p class="color-dgrey font-yahei font-bold">212316546467646546</p>
+						<p><a class="color-lblue" href="">客户信息</a></p>
+						<p><a class="color-lblue" href="">套餐信息</a></p>
+					</td>
+					<td>
+						<p class="font-bold color-dgrey font-yahei">DB_NAME：orcl_001</p>
+						<p>主机名：Linux_MQ</p>
+						<p>IP地址：58.232.1.241</p>
+					</td>
+					<td>老琦</td>
+					<td>
+						<p class="font-bold color-dgrey font-yahei">2014-04-05 12:25:41</p>
+					</td>
+					<td>
+						<p>已处理，待评价</p>
+					</td>
+					<td>
+						<p>杨廷坤</p>
+					</td>
+					<td><p class="font-bold color-dgrey font-yahei">—</p></td>
+					<td class="operations text-center">
+						<p><a href="">查看日志</a></p>
+						<p><a href="">邀请评价</a></p>
+					</td>
+				</tr>
+				<tr class="table-c4">
+					<td>
+						<p class="color-dgrey font-yahei font-bold">CS1000052634565456</p>
+					</td>
+					<td>
+						<p class="color-dgrey font-yahei font-bold">212316546467646546</p>
+						<p><a class="color-lblue" href="">客户信息</a></p>
+						<p><a class="color-lblue" href="">套餐信息</a></p>
+					</td>
+					<td>
+						<p class="font-bold color-dgrey font-yahei">DB_NAME：orcl_001</p>
+						<p>主机名：Linux_MQ</p>
+						<p>IP地址：58.232.1.241</p>
+					</td>
+					<td>老琦</td>
+					<td>
+						<p class="font-bold color-dgrey font-yahei">2014-04-05 12:25:41</p>
+					</td>
+					<td>
+						<p>处理完结</p>
+					</td>
+					<td>
+						<p>杨廷坤</p>
+					</td>
+					<td><p class="font-bold color-dgrey font-yahei">—</p></td>
+					<td class="operations text-center">
+						<p><a href="">查看日志</a></p>
+						<p><a href="">邀请评价</a></p>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	<div class="clearfix"></div>
+</body>
