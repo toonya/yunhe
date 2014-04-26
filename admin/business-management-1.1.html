@@ -48,19 +48,36 @@
 				<div class="changable-item">
 					<p class="normal-h fl ml60">附加描述<span class="desc-index">2</span>：</p>
 					<input data-name="desc" data-index=1 name="desc[1]" class="normal-input width400" type="text" />
-					<a class="btn_new" id="new_desc" href="#">+ 增加附加描述</a>
+					<a class="btn_new new_desc" href="#">+ 增加附加描述</a>
 				</div>
 
 				<p class="dotted-h"><span class="dotted-h-name font-bold font-yahei font-14 color-dgrey">报价</span></p>
-				<p class="normal-h fl ml60"><span class="color-red">*</span>报价方式1：</p>
-				<select class="normal-select width200" id="u49_input">
-		          <option selected="" value="请选择">请选择</option>
-		          <option value="单套数据库">单套数据库</option>
-		          <option value="多节点RAC数据库">多节点RAC数据库</option>
-		          <option value="单套数据库（无关RAC）">单套数据库（无关RAC）</option>
-		        </select>
-				<br>
-				<p class="normal-h fl ml60"><span class="color-red">*</span>报价：</p><input class="normal-input width200" type="text" />&nbsp;元/套 <a class="btn_new" href="#">+ 增加报价方式</a>
+				<div class="changable-item">
+					<div class="item">
+						<p class="normal-h fl ml60"><span class="color-red">*</span>报价方式1：</p>
+						<select class="normal-select quote_type width200" id="u49_input">
+				          <option selected="" value="请选择">请选择</option>
+				          <option value="单套数据库">单套数据库</option>
+				          <option data-for="RAC" value="多节点RAC数据库">多节点RAC数据库</option>
+				          <option value="单套数据库（无关RAC）">单套数据库（无关RAC）</option>
+				        </select>
+						<br>
+						<div class="quote_input">
+							<p class="normal-h fl ml60"><span class="color-red">*</span>报价：</p>
+							<input class="normal-input width200" type="text" />&nbsp;元/套
+							<a class="btn_new new_quote" href="#">+ 增加报价方式</a>
+						</div>
+						<div class="quote_input hide" data-for="RAC">
+							<p class="normal-h fl ml60"><span class="color-red">*</span>报价：</p>
+							<input class="normal-input width200" type="text" />&nbsp;元/双节点
+						</div>
+						<div class="quote_input hide" data-for="RAC">
+							<p class="normal-h fl ml60"><span class="color-red">*</span>增加节点：</p>
+							<input class="normal-input width200" type="text" />&nbsp;元/每节点
+							<a class="btn_new new_quote" href="#">+ 增加报价方式</a>
+						</div>
+					</div>
+				</div>
 
 				<p class="dotted-h"><span class="dotted-h-name font-bold font-yahei font-14 color-dgrey">其它信息</span></p>
 				<p class="normal-h fl ml60">排序值：</p><input class="normal-input width100" type="text" />&nbsp;<span style="color:gray">不填默认为0</span>
