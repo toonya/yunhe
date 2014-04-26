@@ -36,35 +36,46 @@
 			<p class="c-nav"><a href="">后台</a> > <a href="">业务管理</a> > <a href="business-management-1.html">服务套餐管理</a> > <a href="">添加/编辑套餐</a></p>
 			<form action="">
 				<p class="color-red ml60">带 * 的项目为必填项目</p>
-				<p class="normal-h fl ml60"><span class="color-red">*</span>套餐名称：</p><input class="normal-input width400" type="text" />
+				<p class="normal-h fl ml60"><span class="color-red">*</span>套餐名称：</p>
+				<input class="normal-input width400" type="text" />
 				<p class="dotted-h"><span class="dotted-h-name font-bold font-yahei font-14 color-dgrey">套餐描述</span></p>
-				<p class="normal-h fl ml60"><span class="color-red">*</span>核心描述：</p><input class="normal-input width400" type="text" />
+				<p class="normal-h fl ml60"><span class="color-red">*</span>核心描述：</p>
+				<input class="normal-input width400" type="text" />
 				<br>
-				<p class="normal-h fl ml60"><span class="color-red">*</span>附加描述1：</p><input class="normal-input width400" type="text" />
+				<p class="normal-h fl ml60"><span class="color-red">*</span>附加描述<span class="desc">1</span>：</p>
+				<input name="desc[0]" class="normal-input width400" type="text" />
 				<br>
-				<p class="normal-h fl ml60">附加描述2：</p><input class="normal-input width400" type="text" /><button class="btn_new">+ 增加附加描述</button>
+				<div class="changable-item">
+					<p class="normal-h fl ml60">附加描述<span class="desc-index">2</span>：</p>
+					<input data-name="desc" data-index=1 name="desc[1]" class="normal-input width400" type="text" />
+					<a class="btn_new" id="new_desc" href="#">+ 增加附加描述</a>
+				</div>
 
 				<p class="dotted-h"><span class="dotted-h-name font-bold font-yahei font-14 color-dgrey">报价</span></p>
-				<p class="normal-h fl ml60"><span class="color-red">*</span>报价方式1：</p><select class="normal-select width200" id="u49_input">
-																					          <option selected="" value="请选择">请选择</option>
-																					          <option value="单套数据库">单套数据库</option>
-																					          <option value="多节点RAC数据库">多节点RAC数据库</option>
-																					          <option value="单套数据库（无关RAC）">单套数据库（无关RAC）</option>
-																					        </select>
-					<br>
-				<p class="normal-h fl ml60"><span class="color-red">*</span>报价：</p><input class="normal-input width200" type="text" />&nbsp;元/套 <button class="btn_new">+ 增加报价方式</button>
+				<p class="normal-h fl ml60"><span class="color-red">*</span>报价方式1：</p>
+				<select class="normal-select width200" id="u49_input">
+		          <option selected="" value="请选择">请选择</option>
+		          <option value="单套数据库">单套数据库</option>
+		          <option value="多节点RAC数据库">多节点RAC数据库</option>
+		          <option value="单套数据库（无关RAC）">单套数据库（无关RAC）</option>
+		        </select>
+				<br>
+				<p class="normal-h fl ml60"><span class="color-red">*</span>报价：</p><input class="normal-input width200" type="text" />&nbsp;元/套 <a class="btn_new" href="#">+ 增加报价方式</a>
 
 				<p class="dotted-h"><span class="dotted-h-name font-bold font-yahei font-14 color-dgrey">其它信息</span></p>
 				<p class="normal-h fl ml60">排序值：</p><input class="normal-input width100" type="text" />&nbsp;<span style="color:gray">不填默认为0</span>
 				<br>
 				<p class="normal-h fl ml60">当前状态：</p><select id="u49_input" class="normal-select width100">
-													          <option selected="" value="可用">可用</option>
-													          <option value="不可用">不可用</option>
-													        </select>
-					        <br>
-	            <button style="margin-left:310px;" class="btn_save font-14 font-bold">保存</button><button type="reset" class="btn_clear font-14 font-bold">清空</button>
+		          <option selected="" value="可用">可用</option>
+		          <option value="不可用">不可用</option>
+		        </select>
+				<br>
+	            <button style="margin-left:310px;" class="btn_save font-14 font-bold">保存</button>
+	            <button type="reset" class="btn_clear font-14 font-bold">清空</button>
 			</form>
 		</div>
 	</div>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/fn.js"></script>
 </body>
 </html>
