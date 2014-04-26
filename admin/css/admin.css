@@ -2,7 +2,7 @@
 
 
 * {
-	padding: 0; 
+	padding: 0;
 	margin: 0;
 }
 body {
@@ -62,7 +62,12 @@ img {
 	float: left;
 }
 #main {
+	position: absolute;
 	width: 100%;
+	top: 80px;
+	bottom: 0;
+	left: 0;
+	right: 0;
 }
 .fl { float: left; }
 a {
@@ -145,19 +150,25 @@ input.login-submit:hover {
 /*登录后通用样式*/
 #v-nav {
 	width: 15%;
-	min-height: 590px
 	background: #6eaebe;
 	color: white;
+	position: absolute;
+	top: 0;
+	bottom: 0;
 }
 #v-nav ul {
 	line-height: 30px;
 	margin: 25px 0 0 40px;
 }
 #content {
+	position: absolute;
+	left: 15%;
 	width: 85%;
-	min-height: 590px;
 	background: white;
 	font-size: 12px;
+	top: 0;
+	bottom: 0;
+	overflow-y: scroll;
 }
 #content table {
 	border-right:1px solid #bbb;
@@ -224,7 +235,7 @@ input.login-submit:hover {
 	color: #003054;
 	background: -webkit-gradient(linear, left top, left bottom, from(#f2f6f9), to(#e0e9ee));
 	padding: 5px;
-	margin:15px 29px;
+	margin:15px 0;
 	border: 1px solid #bcf;
 }
 .btn_save, .btn_clear {
@@ -298,7 +309,52 @@ input.login-submit:hover {
 }
 
 
+/* pagination */
+.pagination-wrapper {
+	margin: 100px auto 24px;
+}
+.text-right {
+	text-align: right;
+}
 
+.pagination {
+	list-style: none;
+}
+.pagination li {
+	display: inline-block;
+	width: 28px;
+	height: 28px;
+	text-align: center;
+	line-height: 28px;
+	border: 1px solid #000;
+	margin-left: 4px;
+}
 
+.pagination li a {
+	display: block;
+	width: 28px;
+	height: 28px;
+}
 
+.pagination li:hover {
+	background: #EFEFEF;
+}
 
+.pagination :first-child, .pagination :last-child {
+	width: auto;
+	padding: 0 8px;
+}
+.pagination :first-child a, .pagination :last-child a{
+	width: auto;
+	padding: 0 8px;
+}
+
+/* common */
+.hide {
+	display: none !important;
+}
+.content-inner {
+	width: 95%;
+	margin-left: auto;
+	margin-right: auto;
+}

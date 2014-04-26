@@ -7,7 +7,7 @@
 </head>
 
 <body>
-	<div id="header">	
+	<div id="header">
 		<div class="info-field">
 			<div class="logo-field fl">
 				<a href="http://www.enmotech.com/"><img class="logo" src="images/logo.gif"></a><h3 class="fl font-yahei color-white">云和恩墨后台管理</h3>
@@ -19,8 +19,8 @@
 				<div class="nav-field-down">
 					<p class="fl m10 font-14" style="width:400px;"><span><a class="selected" href="">业务管理</a></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span><a href="">内容管理</a></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span><a href="http://www.enmotech.com/">系统设置</a></span></p>
 				</div>
-			</div>		
-		</div>		
+			</div>
+		</div>
 	</div>
 
 	<div id="main">
@@ -34,8 +34,10 @@
 		</div>
 		<div id="content" class="fl">
 			<p class="c-nav"><a href="">后台</a> > <a href="">业务管理</a> > <a href="">Case跟踪管理</a></p>
-			<button class="btn_new">+ 提交新Case</button>
-			<div style="width:95%;margin:0 auto;">
+			<div class="content-inner">
+				<button class="btn_new">+ 提交新Case</button>
+			</div>
+			<div class="content-inner">
 				<span>查找Case单：</span><select id="u69_input" class="normal-select">
 									          <option selected="" value="按Case单号">按Case单号</option>
 									          <option value="按订单号">按订单号</option>
@@ -187,7 +189,18 @@
 					</td>
 				</tr>
 			</table>
+			<div class="text-right pagination-wrapper content-inner">
+				<ul class="pagination" data-ride="pagination" data-max="21" data-current="13" data-url="#">
+				  <li><a data-to="pre" href="#">上一页</a></li>
+				  <li><a data-to="next" href="#">下一页</a></li>
+				</ul>
+			</div>
+
 		</div>
 	</div>
-	<div class="clearfix"></div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap-pagination.js"></script>
 </body>
+</html>
