@@ -54,8 +54,14 @@ img {
 .ml60 {
 	margin-left: 60px;
 }
+.ml30 {
+	margin-left: 30px;
+}
 .mb10 {
 	margin-bottom: 10px;
+}
+.mr5 {
+	margin-right: 5px;
 }
 .logo {
 	margin: 25px;
@@ -202,7 +208,6 @@ input.login-submit:hover {
 }
 .table-c3 {
 	color: #333;
-	height: 80px;
 	text-align: left;
 	vertical-align: top;
 }
@@ -221,6 +226,17 @@ input.login-submit:hover {
 	line-height: 20px;
 	height: 70px;
 	padding: 8px 10px;
+}
+.table-c5 {
+	color: #333;
+	text-align: left;
+	vertical-align: top;
+}
+.table-c5 td {
+	height: 30px;
+	line-height: 20px;
+	padding-top:5px;
+	padding-left: 8px;
 }
 .c-nav {
 	color: #39F;
@@ -263,7 +279,7 @@ input.login-submit:hover {
 .w-content p {
 	margin: 15px 0 0 50px;
 }
-.f-bold {font-weight: bold;}
+
 
 
 /*服务套餐管理*/
@@ -297,6 +313,9 @@ input.login-submit:hover {
 	margin: 10px 0;
 	height: 30px;
 	border: 1px solid #999;
+}
+.width50 {
+	width:50px;
 }
 .width100 {
 	width:100px;
@@ -357,4 +376,14 @@ input.login-submit:hover {
 	width: 95%;
 	margin-left: auto;
 	margin-right: auto;
+}
+
+
+/*内容管理、系统设置两大功能块首页的子功能按钮*/
+.btn-f {
+	cursor: pointer;
+	background: #6eaebe;
+	border: none;
+	width: 180px;
+	height: 180px;
 }
