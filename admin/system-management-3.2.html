@@ -37,20 +37,20 @@
 			<p class="c-nav"><a href="">后台</a> > <a href="">系统设置</a> > <a href="business-management-1.html">用户组管理</a> > <a href="">编辑访问权限</a></p>
 			<form action="">
 				<p style="width:95%;margin:30px auto;">您正在编辑<span>用户组</span>&nbsp;<span class="font-bold">销售经理</span>&nbsp;的访问权限：</p>
-				<p class="dotted-h"><input type="checkbox" name="cboxh1" value="cboxh1"><span class="dotted-h-name font-bold font-yahei font-14 color-dgrey">业务管理</span></p>
+				<p class="dotted-h"><input type="checkbox" data-select-all="all01" name="cboxh1" value="cboxh1"> <span class="dotted-h-name font-bold font-yahei font-14 color-dgrey">业务管理</span></p>
 				<p style="margin:20px 0 20px 75px;padding-left:30px;">
-					<input type="checkbox" name="cbox" value="cbox1">服务套餐管理   
-				    <input type="checkbox" name="cbox" value="cbox2" class="ml30 mr5">客户资料管理
-				    <input type="checkbox" name="cbox" value="cbox3" class="ml30 mr5">服务订单管理   
-				    <input type="checkbox" name="cbox" value="cbox4" class="ml30 mr5">Case跟踪管理
+					<input type="checkbox" name="cbox" value="cbox1" data-select-group="all01" class="mr5">服务套餐管理
+				    <input type="checkbox" name="cbox" value="cbox2" data-select-group="all01" class="ml30 mr5">客户资料管理
+				    <input type="checkbox" name="cbox" value="cbox3" data-select-group="all01" class="ml30 mr5">服务订单管理
+				    <input type="checkbox" name="cbox" value="cbox4" data-select-group="all01" class="ml30 mr5">Case跟踪管理
 				</p>
 
-				<p class="dotted-h"><input type="checkbox" name="cboxh1" value="cboxh1"><span class="dotted-h-name font-bold font-yahei font-14 color-dgrey">系统设置</span></p>
+				<p class="dotted-h"><input type="checkbox" data-select-all="all02" name="cboxh1" value="cboxh1"> <span class="dotted-h-name font-bold font-yahei font-14 color-dgrey">系统设置</span></p>
 				<p style="margin:20px 0 20px 75px;padding-left:30px;">
-					<input type="checkbox" name="cbox" value="cbox5">帐号资料管理   
-				    <input type="checkbox" name="cbox" value="cbox6" class="ml30 mr5">密码管理
-				    <input type="checkbox" name="cbox" value="cbox7" class="ml30 mr5">用户组管理   
-				    <input type="checkbox" name="cbox" value="cbox8" class="ml30 mr5">后台用户管理
+					<input type="checkbox" name="cbox" value="cbox5"  data-select-group="all02" class="mr5">帐号资料管理
+				    <input type="checkbox" name="cbox" value="cbox6"  data-select-group="all02" class="ml30 mr5">密码管理
+				    <input type="checkbox" name="cbox" value="cbox7"  data-select-group="all02" class="ml30 mr5">用户组管理
+				    <input type="checkbox" name="cbox" value="cbox8"  data-select-group="all02" class="ml30 mr5">后台用户管理
 				</p>
 
 	            <button style="margin-left:310px;" class="btn_save font-14 font-bold">保存</button>
