@@ -14,6 +14,8 @@
 			'data-index': index+1
 			});
 		$new_item.find('.desc-index').text(index+1+1);
+		$new_item.find('input').removeAttr('required');
+
 		$(this).closest('.changeable-item').after($new_item).find('.new_desc').remove();
 	})
 	// 切换报价类型
@@ -45,6 +47,9 @@
 		});
 
 		$new_item.find('.quote-index').text( $new_item.find('.quote-index').text()/1+1 );
+		$new_item.find('option').first().prop('selected', 'selected').trigger('change');
+		$new_item.find('input').removeAttr('required');
+		$new_item.find('select').removeAttr('required');
 
 		$(this).closest('.item').after($new_item).find('.new_quote').remove();
 	});
