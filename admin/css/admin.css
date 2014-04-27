@@ -340,12 +340,13 @@ input.login-submit:hover {
 	list-style: none;
 }
 .pagination li {
+	color: #333;
 	display: inline-block;
 	width: 28px;
 	height: 28px;
 	text-align: center;
 	line-height: 28px;
-	border: 1px solid #000;
+	border: 1px solid #aaa;
 	margin-left: 4px;
 }
 
