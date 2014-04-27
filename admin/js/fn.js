@@ -1,8 +1,8 @@
 (function($){
 
 	"use strict";
-	// 新描述
-	$('form').on('click', '.new_desc', function(e){
+	// 新描述 business0management 1.1
+	$('form.business-management-11').on('click', '.new_desc', function(e){
 		e.preventDefault();
 		var $new_item = $(this).closest('.changeable-item').clone(),
 			$input = $new_item.find('input'),
@@ -17,7 +17,7 @@
 		$(this).closest('.changeable-item').after($new_item).find('.new_desc').remove();
 	})
 	// 切换报价类型
-	.on('change', '.quote_type', function(e){
+	.on('change', '.quote_type', function(){
 		var for_target = $(this).find(':selected').data('for');
 		if( for_target && $('[data-for="'+for_target+'"]') ) {
 			$(this).closest('.item').find('.quote_input').not('[data-for="'+for_target+'"]').addClass('hide');
@@ -44,10 +44,15 @@
 				});
 		});
 
-		console.log();
 		$new_item.find('.quote-index').text( $new_item.find('.quote-index').text()/1+1 );
 
 		$(this).closest('.item').after($new_item).find('.new_quote').remove();
+	});
+
+	// select all system-manage 3.2
+	$('[data-select-all]').on('change', function(){
+		var group_name = $(this).data('selectAll');
+		$('[data-select-group="'+group_name+'"]').prop('checked', this.checked);
 	})
 
-})(jQuery)
+})(jQuery);
