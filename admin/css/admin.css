@@ -327,7 +327,6 @@ input.login-submit:hover {
   list-style: none;
 }
 .pagination li {
-<<<<<<< HEAD
 	color: #333;
 	display: inline-block;
 	width: 28px;
@@ -338,16 +337,6 @@ input.login-submit:hover {
 	margin-left: 4px;
 }
 
-=======
-  display: inline-block;
-  width: 28px;
-  height: 28px;
-  text-align: center;
-  line-height: 28px;
-  border: 1px solid #000;
-  margin-left: 4px;
-}
->>>>>>> c59ed639334cc4f30f7343a19777714e06f13b26
 .pagination li a {
   display: block;
   width: 28px;
