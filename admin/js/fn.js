@@ -20,12 +20,12 @@
 	.on('change', '.quote_type', function(){
 		var for_target = $(this).find(':selected').data('for');
 		if( for_target && $('[data-for="'+for_target+'"]') ) {
-			$(this).closest('.item').find('.quote_input').not('[data-for="'+for_target+'"]').addClass('hide');
-			$(this).closest('.item').find('.quote_input[data-for="'+for_target+'"]').removeClass('hide');
+			$(this).closest('.item').find('.quote_input').not('[data-for="'+for_target+'"]').addClass('hide').find('input').removeAttr('data-required');
+			$(this).closest('.item').find('.quote_input[data-for="'+for_target+'"]').removeClass('hide').find('input').attr('data-required','');
 		}
 		else {
-			$(this).closest('.item').find('.quote_input').not('[data-for]').removeClass('hide');
-			$(this).closest('.item').find('.quote_input[data-for]').addClass('hide');
+			$(this).closest('.item').find('.quote_input').not('[data-for]').removeClass('hide').find('input').attr('data-required','');
+			$(this).closest('.item').find('.quote_input[data-for]').addClass('hide').find('input').removeAttr('data-required');
 		}
 	})
 	// 新报价
@@ -53,6 +53,20 @@
 	$('[data-select-all]').on('change', function(){
 		var group_name = $(this).data('selectAll');
 		$('[data-select-group="'+group_name+'"]').prop('checked', this.checked);
-	})
+	});
+
+	// form validate
+	$('[data-required]').closest('form').on('submit', function(e){
+		//$('this').trigger('specialValidation');
+
+		$(this).find('[data-required]').each(function(i,e){
+			$(this).attr('required','required');
+		})
+
+		if( $(this).find(':invalid').size() > 0 )
+			e.preventDefault();
+	});
+	// special validation
+	//$('form.business-management-11').on('submit', function(e){});
 
 })(jQuery);

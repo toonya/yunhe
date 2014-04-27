@@ -364,6 +364,16 @@ input.login-submit:hover {
   margin-left: auto;
   margin-right: auto;
 }
+button {
+	cursor: pointer;
+}
+/* form */
+:invalid {
+	border-color: red;
+}
+.inline-form {
+	display: inline;
+}
 /*内容管理、系统设置两大功能块首页的子功能按钮*/
 .btn-f {
   cursor: pointer;
