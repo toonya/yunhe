@@ -1,8 +1,10 @@
 <!doctype html>
-<html>
+<html class="fix-bs">
 <head>
 <meta charset="utf-8">
 <title>服务订单管理-业务支撑管理后台 | 云和恩墨</title>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/bootstrap-datetimepicker.min.css">
 <link rel="stylesheet" type="text/css" href="css/admin.css">
 </head>
 
@@ -53,7 +55,7 @@
 								          <option value="已结束">已结束</option>
 								          <option value="已取消">已取消</option>
 								        </select>
-				<span>&nbsp;&nbsp;&nbsp;起止时间：</span><input style="width:130px" id="u48_input" type="text" value="" class="normal-input"/> 至 <input style="width:130px;" id="u49_input" type="text" value="" class="normal-input"/>
+														<span>&nbsp;&nbsp;&nbsp;起止时间：</span><input style="width:130px" id="u48_input" type="text" value="" class="normal-input datePick" data-date-format="YYYY-MM-DD"/> 至 <input style="width:130px;" id="u49_input" type="text" value="" class="normal-input datePick" data-date-format="YYYY-MM-DD"/>
 				<button class="btn_search" style="margin:0 5px;">查找</button>
 				<button class="btn_search" style="margin-right:0;">移交全部跟单</button>
 			</div>
@@ -291,6 +293,15 @@
 
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/moment-with-langs.min.js"></script>
+    <script src="js/bootstrap-datetimepicker.min.js"></script>
     <script src="js/bootstrap-pagination.js"></script>
+    <script>
+	    $('.datePick').datetimepicker({
+	        pickTime: false,
+	        language: 'zh-cn'
+	    });
+
+    </script>
 </body>
 </html>

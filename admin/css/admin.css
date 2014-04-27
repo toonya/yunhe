@@ -382,3 +382,54 @@ button {
   width: 180px;
   height: 180px;
 }
+
+
+/* fix-bs */
+html.fix-bs {
+	font-size: 100%;
+	font-family: 'Simsum', serif;
+}
+
+.fix-bs body {
+	font-family: inherit;
+	font-size: 16px;
+	line-height: inherit;
+}
+.fix-bs input,.fix-bs button,.fix-bs select,.fix-bs textarea {
+	font-size: 11px;
+}
+
+.fix-bs h3 {
+	font-size: 19px;
+	margin: 0;
+	font-weight: bold;
+	line-height: 25px;
+}
+.fix-bs td p {
+	margin: 0;
+}
+.fix-bs * {
+	box-sizing: content-box;
+}
+.fix-bs .pagination>li>a,.fix-bs .pagination>li>span {
+	border: none;
+}
+.fix-bs .pagination li a{
+	line-height: 28px;
+	width: 28px;
+	padding: 0;
+	color: #333;
+	background: none;
+}
+.fix-bs .pagination>.active>a {
+	background: inherit;
+}
+.fix-bs .pagination>.active>a:hover {
+	color: inherit;
+}
+
+.fix-bs .pagination li:first-child a,
+.fix-bs .pagination li:last-child a{
+  width: auto;
+  padding: 0 8px;
+}

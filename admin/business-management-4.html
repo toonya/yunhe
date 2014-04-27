@@ -1,9 +1,13 @@
 <!doctype html>
-<html>
+<html class="fix-bs">
 <head>
 <meta charset="utf-8">
 <title>Case跟踪管理-业务支撑管理后台 | 云和恩墨</title>
+
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/bootstrap-datetimepicker.min.css">
 <link rel="stylesheet" type="text/css" href="css/admin.css">
+
 </head>
 
 <body>
@@ -52,7 +56,7 @@
 													          <option value="处理中">处理中</option>
 													          <option value="已完结">已完结</option>
 													        </select>
-																	<span>&nbsp;&nbsp;&nbsp;起止时间：</span><input style="width:130px" id="u48_input" type="text" value="" class="normal-input"/> 至 <input style="width:130px;" id="u49_input" type="text" value="" class="normal-input"/>
+																	<span>&nbsp;&nbsp;&nbsp;起止时间：</span><input style="width:130px" id="u48_input" type="text" value="" class="normal-input datePick" data-date-format="YYYY-MM-DD"/> 至 <input style="width:130px;" id="u49_input" type="text" value="" class="normal-input datePick" data-date-format="YYYY-MM-DD"/>
 				<button class="btn_search" style="margin:0 5px;">查找</button>
 				<button class="btn_search" style="margin:0;">移交全部Case单</button>
 			</div>
@@ -189,6 +193,7 @@
 					</td>
 				</tr>
 			</table>
+
 			<div class="text-right pagination-wrapper content-inner">
 				<ul class="pagination" data-ride="pagination" data-max="21" data-current="13" data-url="#">
 				  <li><a data-to="pre" href="#">上一页</a></li>
@@ -201,6 +206,15 @@
 
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/moment-with-langs.min.js"></script>
+    <script src="js/bootstrap-datetimepicker.min.js"></script>
     <script src="js/bootstrap-pagination.js"></script>
+    <script>
+	    $('.datePick').datetimepicker({
+	        pickTime: false,
+	        language: 'zh-cn'
+	    });
+
+    </script>
 </body>
 </html>
