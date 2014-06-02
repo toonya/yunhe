@@ -438,7 +438,6 @@ html.fix-bs {
   padding: 0 8px;
 }
 
-
 .modal-header {
 	background: #E5E5E5;
 	border-top-left-radius: 4px;
@@ -453,4 +452,9 @@ html.fix-bs {
 
 .modal-dialog {
 	margin-top: 150px;
+}
+
+.fix-bs a:hover{
+	color: inherit;
+	text-decoration: none;
 }
