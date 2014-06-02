@@ -391,12 +391,16 @@ html.fix-bs {
 }
 
 .fix-bs body {
-	font-family: inherit;
+	font-family: 'Simsum', serif;
 	font-size: 16px;
 	line-height: inherit;
 }
 .fix-bs input,.fix-bs button,.fix-bs select,.fix-bs textarea {
 	font-size: 11px;
+}
+
+.fix-bs .modal input,.fix-bs .modal button,.fix-bs .modal select,.fix-bs .modal textarea {
+	font-size: 14px;
 }
 
 .fix-bs h3 {
@@ -432,4 +436,21 @@ html.fix-bs {
 .fix-bs .pagination li:last-child a{
   width: auto;
   padding: 0 8px;
+}
+
+
+.modal-header {
+	background: #E5E5E5;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+}
+
+.modal-content {
+	border-radius: 4px;
+	font-size: 14px;
+	font-family: "Microsoft YaHei" , Arial, helvetica, sans-serif;
+}
+
+.modal-dialog {
+	margin-top: 150px;
 }

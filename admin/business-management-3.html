@@ -9,6 +9,31 @@
 </head>
 
 <body>
+	<div class="modal fade" id="markAsMine">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					<h4 class="modal-title">系统提示</h4>
+				</div>
+				<div class="modal-body">
+					<div class="row">
+						<div class="col-xs-1">
+							<span class="text-primary glyphicon glyphicon-info-sign"></span>
+						</div>
+						<div class="col-xs-9">
+							<p>确认标注该订单为自己的目标客户订单吗？</p>
+							<p>标注后的订单客户将由您跟踪到底！</p>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-primary">确定</button>
+					<button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+				</div>
+			</div><!-- /.modal-content -->
+		</div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
 	<div id="header">
 		<div class="info-field">
 			<div class="logo-field fl">
@@ -100,7 +125,7 @@
 						<p>联系人：无</p>
 					</td>
 					<td class="operations text-center">
-						<p><a href="">标志为我的订单</a></p>
+						<p><a href="" data-toggle="modal" data-target="#markAsMine">标志为我的订单</a></p>
 						<p><a href="">分配该订单</a></p>
 					</td>
 				</tr>
